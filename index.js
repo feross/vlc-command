@@ -1,7 +1,6 @@
 module.exports = getVLCPath
 
 var cp = require('child_process')
-var fs = require('fs')
 var os = require('os')
 var path = require('path')
 var parallel = require('run-parallel')
