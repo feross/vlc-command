@@ -70,7 +70,6 @@ function findCmd (cmds, cb) {
 
   var tasks = cmds.map(function (cmd, i) {
     return function (cb) {
-      console.log(cmd)
       cp.exec(cmd + ' --version', function (err) {
         if (!err && (foundIndex === -1 || i < foundIndex)) {
           foundIndex = i
