@@ -19,7 +19,7 @@ function getVLCPathWindows (cb) {
   var Registry = require('winreg')
 
   getInstallDir(function (err, item) {
-    if (!err) return cb(null, item.value + path.sep + 'vlc')
+    if (!err) return cb(null, path.join(item.value, 'vlc.exe'))
     getInstallDirWow64(function (err, item) {
       if (err) return cb(new Error('VLC not found'))
       return cb(null, path.join(item.value, 'vlc.exe'))
