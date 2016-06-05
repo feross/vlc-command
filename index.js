@@ -22,7 +22,7 @@ function getVLCPathWindows (cb) {
     if (!err) return cb(null, item.value + path.sep + 'vlc')
     getInstallDirWow64(function (err, item) {
       if (err) return cb(new Error('VLC not found'))
-      return cb(null, item.value + path.sep + 'vlc')
+      return cb(null, path.join(item.value, 'vlc.exe'))
     })
   })
 
