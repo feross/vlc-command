@@ -11,7 +11,8 @@
     "url": "https://github.com/feross/vlc-command/issues"
   },
   "dependencies": {
-    "run-parallel": "^1.1.6"
+    "run-parallel": "^1.1.6",
+    "winreg": "^1.2.1"
   },
   "devDependencies": {
     "standard": "^7.0.0"
