@@ -6,8 +6,7 @@ var vlcCommand = require('./')
 var arg = process.argv[2]
 
 if (!arg || arg === '--help' || arg === '-h') {
-  console.log(
-`
+  console.log(`
 Usage:
     vlc-command <option>
 
@@ -16,8 +15,7 @@ Options:
     --path, -p     Print VLC path.
     --help, -h     Print usage information.
     --version, -v  Print version.
-`
-  )
+  `)
 }
 
 if (arg === '--path' || arg === '-p') {
