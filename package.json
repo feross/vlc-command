@@ -16,7 +16,7 @@
     "winreg": "^1.2.1"
   },
   "devDependencies": {
-    "standard": "*"
+    "standard": ">=12.0.0"
   },
   "homepage": "https://github.com/feross/vlc-command",
   "keywords": [
