@@ -60,7 +60,8 @@ function getVLCPathLinux (cb) {
   var cmds = [
     '/usr/bin/vlc',
     '/usr/local/bin/vlc',
-    'vlc'
+    'vlc',
+    'flatpak run org.videolan.VLC'
   ]
   findCmd(cmds, cb)
 }
